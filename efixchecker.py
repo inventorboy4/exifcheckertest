@@ -51,8 +51,8 @@ def image_sort(path, res):
             #amounts[1]+=new_amounts[1]
     return amounts
 
-parser = argparse.ArgumentParser(prog="ImageSorter", 
-                                 description="Simple image batch sorter", 
+parser = argparse.ArgumentParser(prog="EfixChecker", 
+                                 description="Simple picture efix creation date checker", 
                                  epilog="If any argument is not given, it defaults to current folder.")
 parser.add_argument("-f", "--file", help="Path to folder with images to sort.")
 parser.add_argument("--files", action="extend", nargs="+", type=str, help="Path to multiple folders separated by space.")
@@ -69,3 +69,4 @@ for folder in path:
     amounts[1]+=new_amounts[1]
 print("Images overall:", amounts[0])
 print("Images with efix:", amounts[1])
+
